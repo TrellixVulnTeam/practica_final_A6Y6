@@ -1,0 +1,26 @@
+@import 'variables';
+
+$pix: 20px;
+
+.info__boton {
+  text-decoration: none;
+  position: absolute;
+  margin-top: $pix;
+  padding: $pix/2;
+  border-radius: 30px;
+  right: 45%;
+  cursor: pointer;
+  color: $white;
+  font-weight: 200;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(219,153,167,1) 100%);
+  transition: all 0.7s;
+}
+
+.info__boton:hover {
+  right: 44%;
+  color: $white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 55px;
+}

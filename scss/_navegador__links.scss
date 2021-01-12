@@ -1,0 +1,31 @@
+@media (max-width: 1100px) {
+  .navegador__elemento {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+}
+
+.navegador__links {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all .5s;
+
+  @media (max-width: 1100px) {
+    .navegador__links {
+      font-size: 20px;
+    }
+
+    .navegador__links:hover, .navegador__links.active {
+      background: none;
+      color: #0082e6;
+    }    
+  }
+}
+
+.navegador__links:hover {
+  background: #1b9bff;
+}

@@ -1,0 +1,118 @@
+		****TAREAS****
+
+
+-Crear el archivo SCSS de sus proyectos y compilarlos
+-Crear al menos cuatro bloques con la metodología de BEM
+
+-Seleccionar tres o más bloques HTML de alguna de tus páginas del desafío 
+que aún no tengan styleadas en CSS, y generar el código necesario en SASS
+para darle estilo.
+
+-Aplicar las Keywords, descripción, títulos y encabezado a tu proyecto
+-Explica en un google Doc os cambios realizados en el proyecto.
+-Cargarlo a la plataforma
+
+
+
+-BEM
+-SCSS / SASS
+-SEO
+
+https://9elements.com/bem-cheat-sheet/
+-https://sass-lang.com/install
+https://keywordtool.io/
+
+
+*** BEM ***
+
+
+-Un sistema basado en bloques
+dentro de cada bloque puede existir un bloque
+---TODOS LOS ELEMENTOS QUE ESTÉN DENTRO DE ESTA METODOLOGIA LLEVAN CLASE---
+Elemento bloque padre ej: class="navegador"
+elementos bloque hijo llevan clase del elemento bloque padre, pero se agregan dos guiones bajos ("_ _") y una nueva denominacion. 
+ej: class="navegador__lista"
+
+Modificadores:
+son declaraciones CSS que van a dar ciertos estilos a ciertos elementos HTML.
+ej: class="navegador__lista--verde"
+
+
++++++ BLOQUES: __  (guiones bajos)
++++++MODIFICADORES -- (Guiones medios)
+
+
+
+
+
+
+*** Comandos SASS ***
+
+SASS es una herramienta que permite controlar las hojas de estilo en tus archivos HTML.
+Está planeada para utilizar una sola hoja de estilos para todo un sitio, aligerando el peso de tener varios archivos .css a uno solo que 
+importe a muchos ligeros scss.
+los archivos SASS se guardan con la extensión .scss que es 100% compatible con los archivos css.
+Se considera un archivo general (en tu carpeta es styles.scss) que va a importar al resto. Esta importación pasa por un
+archivo de mapeo (styles.map.scss) que, posteriormente, lo lleva a una sola hoja de estilos previamente enlazada con el comando de abajo
+(en tu caso, a styles.css)
+para que la importación no tenga errores, todos los archivos que se importan a styles.scss deben llevar un guión bajo (_) al inicio.
+(_grid.scss, _imagenes.scss)
+Para importar, debes escribir la linea @import 'nombre de tu archivo';. Se escribe con comillas simples y no es necesario poner la
+extensión de archivo. +++++++++ NO OLVIDAR TERMINAR LA LINEA CON PUNTO Y COMA +++++++++
+Utiliza variables que puedes ir declarando conforme modificas tus estilos
+
+
+ES NECESARIO COMPILAR LAS HOJAS DE ESTILO
+
+para compilar debes utilizar la consola, el comando para compilar es:
+
+sass --watch (carpeta donde se localiza tu archivo scss)/(el nombre de tu archivo scss junto con su extensión) [espacio] (carpeta donde se localiza tu archivo css)/nombre de tu archivo css)
+
+ej:
+
+sass --watch scss/styles.scss css/styles.css
+
+-Con el comando anterior, si no cometiste ningún error, te saldrá un mensaje que dice "esperando cambios" pocos instantes después, 
+eso significa que ya está compilando. Se compila cada que el archivo se guarda. TIP: activa la función de auto guardado siempre.
+
+SCSS utiliza la misma syntax que css de forma general (aunque hay una un poco diferente que puedes revisar en su documentación,
+para este trabajo utilizamos la syntax de css).
+
+SCSS permite anidar, por ejemplo:
+
+* {
+	backgrouund: #f2f2f2;
+	color:white;
+
+	@media (max.width: 1000px) {
+		*{
+			background: black;
+			font-size: 35em;
+		}
+}
+
+Es importante destacar que CSS no permite anidar, solamente SCSS.
+
+
+
+
+			SEO
+
+Las meta etiquetas son herramientas que nos van a permitir posicionar nuestro sitio en los buscadores web más usados, algunos temas que
+ponen en consideración son:
+
+-la correcta indentación
+-el peso del sitio (por eso es importante mantener en orden tu archivo y para eso nos sirve SASS)
+-el uso de meta etiquetas
+
+las meta etiquetas que se usaron son:
+
+	<meta charset="UTF-8> = Separa nuestro abecedario del abecedario inglés, permitiendonos usar la letra ñ, entre otras.
+	<meta name="keywords" content="denim outfit moda campera"> = Nos permite utilizar palabras clave que potencíen nuestro sitio web según los clicks ratio
+  	<meta name="description" content="Lo mejor en moda para todos"> = Esta etiqueta es la que nos va a mostrar la descripción de los sitios en el buscador. Se recomienda que on exceda los 120 caracteres
+  
+  	<title>Bonhomia Denim - Home</title> = Por sencillo que parezca, el título  de nuestro sitio también es primordial, ya que los motores de búsqueda utilizan esta meta etiqueta también para indexar el sitio
+
+
+
++TODAS LAS META ETIQUETAS VAN EN LA ETIQUETA <HEAD>

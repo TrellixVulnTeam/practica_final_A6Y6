@@ -1,0 +1,14 @@
+@import 'variables';
+
+.info {
+  margin: 5%;
+}
+.info__titulo {
+  text-align: $c;
+  font-weight: 800;
+}
+
+.info__texto {
+  margin-top: $nav-height;
+  text-align: $c;
+}

@@ -1,0 +1,13 @@
+@import 'variables';
+
+.contenido__fondo {
+  width: $general;
+  alt: auto;
+
+  @media (max-width: 1100px) and (max-width: 1000px) {
+    .contenido__fondo {
+      alt: auto;
+    }
+  }
+}
+

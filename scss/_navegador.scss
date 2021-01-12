@@ -1,0 +1,34 @@
+@import 'variables';
+
+$pixel: 10px;
+
+
+/* LISTA NO ORDENADA */
+.navegador__lista {
+  float: right;
+  margin-right: $pixel*2;
+}
+
+/* ELEMENTOS DE LISTA */
+.navegador__elemento {
+  display: inline-block;
+  line-height: $nav-height;
+  margin: 0 5px;
+}
+
+
+.navegador {
+  background: $nav-primario;
+  height: $nav-height;
+  width: $general; 
+}
+
+.navegador--claro {
+  background: $nav-secundario;
+  height: $nav-height;
+  width: $general;
+}
+
+.navegador--oscuro {
+  background: $black;
+}
