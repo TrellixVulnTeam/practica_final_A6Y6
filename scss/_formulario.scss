@@ -1,0 +1,73 @@
+@import 'variables';
+
+.formulario {
+  width: 100%;
+  margin: 10% auto 0 auto;
+}
+
+.elements {
+  margin: 3%;
+}
+.formulario__title {
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 2em;
+}
+
+.formulario__text {
+  padding: 2%;
+  text-align: center;
+}
+
+.form {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5%;
+  display: inline;
+}
+
+
+.form__dato {
+  font-size: 1em;
+  color: $black;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: #f2f2f2;
+  transition: all 0.7s ease;
+}
+
+input:hover {
+  background: $white;
+  transform: scale(1.2);
+}
+
+.submit {
+  text-align: center;
+}
+
+#last {
+  font-weight: 200;
+}
+
+#btn {
+  padding: .5%;
+  color: $white;
+  font-size: 1em;
+  border-radius: 2%;
+  background: $nav-primario;
+  transition: all 0.8s ease !important;
+  outline: none;
+}
+
+#btn:hover {
+  border-radius: 15%;
+  transform: scale(1.4);
+  background: $black;
+}
+
+
