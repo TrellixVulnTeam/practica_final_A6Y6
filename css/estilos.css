@@ -1,11 +1,4 @@
 /* ESTILOS LOGO */
-.navegador__logo {
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
 
 @media (max-width: 1300px) {
   .navegador__logo {

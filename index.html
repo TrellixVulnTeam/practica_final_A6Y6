@@ -8,6 +8,7 @@
   <meta name="keywords" content="denim outfit moda campera">
   <meta name="description" content="Lo mejor en moda para todos">
   
+  <link rel="shortcut icon" href="img/bolsillo.ico" type="image/x-icon">
   <title>Bonhomia Denim - Home</title>
 
   <!-- FUENTE: Montserrat 200, 400, 600, 800 -->
@@ -35,25 +36,37 @@
 
 </head>
 <body>
-  
+
   <nav class="navegador">
-    <input class="navegador__checkbox" type="checkbox" id="check">
-      <label for="check" class="navegador__label"><i class="fas fa-bars"></i></label>
-      <label class="navegador__logo">BΦNHΦMIA DΣ≈IM</label>
-      <ul class="navegador__lista">
-        <li class="navegador__elemento"><a href="index.html" class="navegador__links">Inicio</a></li>
-        <li class="navegador__elemento"><a href="pages/quienessomos.html" class="navegador__links">Quienes Somos</a></li>
-        <li class="navegador__elemento"><a href="pages/nuestrosdiseños.html" class="navegador__links">Nuestros Diseños</a></li>
-        <li class="navegador__elemento"><a href="pages/tipodepresupuesto.html" class="navegador__links">Tipo de Presupuesto</a></li>
-        <li class="navegador__elemento"><a href="pages/contacto.html" class="navegador__links">Contacto</a></li>
-      </ul>
-    </nav>
+    <input type="text" class="navegador__checkbox" type="checkbox" id="check">
+    <label for="check" class="navegador__label"><i class="fas fa-bars"></i></label>
+    <label class="navegador__logo">BONHOMIA DENIM</label>
+    <ul class="navegador__lista">
+      <li class="navegador__elemento" id="active">Inicio</li>
+        <li class="navegador__elemento"><a href="pages/quienessomos.html" class="navegador__links">Nosotros</a></li>
+        <li class="navegador__elemento"><a href="pages/nuestrosdiseños.html" class="navegador__links">Estilo</a></li>
+        <li class="navegador__elemento"><a href="pages/tipodepresupuesto.html" class="navegador__links">Crea tu estilo</a></li>
+        <li class="navegador__elemento"><a href="pages/contacto.html" class="navegador__links">Contactanos</a></li>
+    </ul>
+  </nav>
+  <div class="background">
+    <img class="contenido__fondo" src="img/fondoindex.jpg">
+  </div>
 
-    <span class="contenido">
-      <div class="contenido__div bg" align="center" alt="fondoindex">
-        <img class="contenido__fondo imagenDeFondo" src="img/fondoindex.jpg">
+  <div class="contenido">
+    <section class="info">
+      <h2 class="info__titulo">Elige tu mejor versión</h2>
+      <p class="info__texto"><span class="info__marca">BONHOMIA DENIM</span> es una marca que busca la comodidad y la vanguardia en el estilo personal utilizando el denim como nuestra mejor opción.</p>
+      <h3 class="info__subtitulo">Atrévete a verte bien siempre</h3>
+      <div class="info__galeria">
+        <img class="info__img" src="img/21.jpg" alt="">
+        <img class="info__img" src="img/21.jpg" alt="">
+        <img class="info__img" src="img/21.jpg" alt="">
       </div>
-    </span>
+    </section>
+  </div>
 
+  <footer>
+  </footer>
 </body>
 </html>

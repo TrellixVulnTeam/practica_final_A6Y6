@@ -1,14 +1,46 @@
 @import 'variables';
 
-.info {
-  margin: 5%;
+
+
+.navegador__logo {
+  font-family: 'Amatic SC', cursive;
+  color: rgb(15, 15, 15);
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 35px;
+  letter-spacing: 10px;
+  padding: auto 20px;
 }
+
 .info__titulo {
-  text-align: $c;
-  font-weight: 800;
+  padding-top: 1.5em;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-decoration: underline $black2;
 }
 
 .info__texto {
-  margin-top: $nav-height;
-  text-align: $c;
+  font-size: 1.3em;
+  font-weight: 200;
 }
+
+.info__marca {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+// .info {
+//   margin: 5%;
+// }
+// .info__titulo {
+//   text-align: $c;
+//   font-weight: 800;
+// }
+
+// .info__texto {
+//   margin-top: $nav-height;
+//   text-align: $c;
+// }
